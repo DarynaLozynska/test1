@@ -7,28 +7,57 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="project">
-    <header>
-      <div class="content">
-        <div class="h2">
-          <h2>JobBoard</h2>
-        </div>
-        <div class="p">
-          <p>Jobs</p>
-          <a href="#">blog</a>
-          <a href="#">community</a>
-        </div>
-        <div class="a">
-          <p>My profile
-          </p>
+  <div class="container page-header-container">
+    <header class="page-header content">
+      <a href="#" class="logo">JobBoard</a>
+      <nav class="main-navigation">
+        <a href="#" class="link-active">Jobs</a>
+        <a href="#" class="link">News</a>
+        <a href="#" class="link">Community</a>
+      </nav>
+      <a href="#" class="profile">My profile</a>
+    </header>
+  </div>
+
+
+  <main>
+    <article class="job-card">
+      <header class="card-header">
+        <h4 class="title">Front-End Developer</h4>
+        <p class="salary">100 000 - 200 000 $ </p>
+        <p class="tag">Java Script</p>
+      </header>
+      <div class="card-content">
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+          ullamco laboris nisi ut aliquip ex ea commodo consequat…</p>
+        <div class="row-wrap" >
+          <p class="tag remote">Remote</p>
+          <p class="tag full-time"> Full-time</p>
+          <p class="tag ukraine">Ukraine</p>
         </div>
       </div>
-    </header>
-    <div class="others"></div>
-  </div>
+      <hr>
+      <footer class="card-footer">
+        <div class="company-info"> 
+          <img src="logo.png" alt="" class="company-logo">
+          <p class="company-name">Microsoft</p>
+          <p class="company-size">500+ employees</p>
+        </div>
+        <div class="buttons">
+          <button class="active-button">Recommend</button>
+          <button class="nonactive-button">Apply </button>
+        </div>
+      </footer>
+      
+    </article>
+  </main>
 </body>
 
 </html>
